@@ -1,6 +1,5 @@
 import { assert } from 'chai';
-
-var sayHello = use('hello/HelloBabel').sayHello;
+import { sayHello } from 'hello/HelloBabel';
 
 describe('HelloBabel', () => {
   it('sayHello', () => {

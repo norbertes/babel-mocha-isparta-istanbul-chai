@@ -10,8 +10,8 @@
     "mocha": "^2.2.5"
   },
   "scripts": {
-    "cover": "isparta cover --report html _mocha -- -r test-init.js --compilers js:babel-core/register test/**/*Test.js",
-    "test": "mocha -r test-init.js --compilers js:babel-core/register test/**/*Test.js"
+    "cover": "NODE_PATH=src isparta cover --report html _mocha -- --compilers js:babel-core/register test/**/*Test.js",
+    "test": "NODE_PATH=src mocha --compilers js:babel-core/register test/**/*Test.js"
   },
   "author": "panlw@yeah.net",
   "license": "MIT"
