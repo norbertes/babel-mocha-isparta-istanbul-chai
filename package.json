@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "babel,mocha,coverage",
   "main": "index.js",
+  "repository": "",
   "devDependencies": {
     "babel-core": "^5.7.4",
     "chai": "^3.0.0",
     "isparta": "^3.0.3",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "require-noop": "0.0.2"
   },
   "scripts": {
-    "cover": "NODE_PATH=src isparta cover --report html _mocha -- --compilers js:babel-core/register test/**/*Test.js",
-    "test": "NODE_PATH=src mocha --compilers js:babel-core/register test/**/*Test.js"
+    "cover": "NODE_PATH=src isparta cover --report html _mocha -- --compilers :./test/compilers.js test/**/*Test.js",
+    "test": "NODE_PATH=src mocha --compilers :./test/compilers.js test/**/*Test.js"
   },
   "author": "panlw@yeah.net",
   "license": "MIT"
