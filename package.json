@@ -1,20 +1,37 @@
 {
-  "name": "hello-isparta",
+  "name": "hello-mocha",
   "version": "1.0.0",
-  "description": "babel,mocha,coverage",
+  "description": "ES6 Unit&Coverage Testing (powered by babel/mocha/isparta/istanbul/chai)",
   "main": "index.js",
-  "repository": "",
+  "scripts": {
+    "test": "NODE_PATH=src mocha",
+    "cover": "NODE_PATH=src isparta cover -i **/*.jsx _mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panlw/hello-isparta.git"
+  },
   "devDependencies": {
-    "babel-core": "^5.7.4",
-    "chai": "^3.0.0",
+    "babel-core": "^5.8.3",
+    "chai": "^3.2.0",
     "isparta": "^3.0.3",
+    "istanbul": "^0.3.17",
     "mocha": "^2.2.5",
     "require-noop": "0.0.2"
   },
-  "scripts": {
-    "cover": "NODE_PATH=src isparta cover --report html _mocha -- --compilers :./test/compilers.js test/**/*Test.js",
-    "test": "NODE_PATH=src mocha --compilers :./test/compilers.js test/**/*Test.js"
-  },
+  "keywords": [
+    "mocha",
+    "babel",
+    "cover",
+    "isparta",
+    "istanbul",
+    "chai",
+    "should"
+  ],
   "author": "panlw@yeah.net",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/panlw/hello-isparta/issues"
+  },
+  "homepage": "https://github.com/panlw/hello-isparta#readme"
 }
