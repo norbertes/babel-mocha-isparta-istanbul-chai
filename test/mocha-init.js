@@ -10,3 +10,13 @@ require('require-noop')({
 
 // assertions
 require('chai').should();
+
+// mock browser
+require('node-jsdom').env({
+  html: '<body></body>',
+  done: function (errors, window) {
+    global.document = window.document;
+    global.window = window;
+    global.navigator = window.navigator;
+  }
+});

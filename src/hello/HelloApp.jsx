@@ -1,13 +1,12 @@
 import React from 'react';
-import HelloComp from 'hello/react/HelloComp';
+import HelloList from 'hello/react/HelloList';
+
+const ITEMS = ['A', 'B', 'C'];
 
 export default React.createClass({
   render: function() {
-    return (
-      <div>
-        <h1>{this.props.title}</h1>
-        <HelloComp name="Mocha" />
-      </div>
-    );
+    return <HelloList items={ITEMS.map(item => {
+      return {value: item, checked: item === 'B'};
+    })} />;
   }
 });

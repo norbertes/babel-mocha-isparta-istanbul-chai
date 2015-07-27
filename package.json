@@ -4,8 +4,8 @@
   "description": "ES6 Unit&Coverage Testing (powered by babel/mocha/isparta/istanbul/chai)",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_PATH=src mocha",
-    "cover": "NODE_PATH=src isparta cover -i **/*.jsx _mocha"
+    "test": "NODE_PATH=src NODE_ENV=dev mocha",
+    "cover": "NODE_PATH=src NODE_ENV=dev isparta cover -i **/*.jsx _mocha"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,9 @@
     "isparta": "^3.0.3",
     "istanbul": "^0.3.17",
     "mocha": "^2.2.5",
-    "require-noop": "0.0.2"
+    "node-jsdom": "^3.1.5",
+    "require-noop": "0.0.2",
+    "rewire": "^2.3.4"
   },
   "keywords": [
     "mocha",

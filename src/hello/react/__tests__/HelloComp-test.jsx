@@ -1,6 +1,5 @@
 import React from 'react/addons';
 const TestUtils = React.addons.TestUtils;
-const Simulate = TestUtils.Simulate;
 
 import HelloComp from '../HelloComp';
 

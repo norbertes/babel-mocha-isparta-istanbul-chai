@@ -1,11 +1,10 @@
-import { assert } from 'chai';
 import { sayHello } from '../HelloBabel';
 
 describe('HelloBabel', () => {
   it('sayHello', () => {
-    assert(sayHello() === 'Hello, Isparta!');
+    sayHello().should.be.equal('Hello, Isparta!');
   });
   it('sayHi', () => {
-    assert(sayHello(true) === 'Hi, Isparta!');
+    sayHello(true).should.be.equal('Hi, Isparta!');
   });
 });
