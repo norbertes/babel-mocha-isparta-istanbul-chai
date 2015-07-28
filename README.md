@@ -1,1 +1,1 @@
-# ES6 Unit&Coverage Testing (powered by babel/mocha/isparta/istanbul/chai)
+# ES6/JSX(React) Unit&Coverage Testing (Powered by babel-core/mocha/isparta/istanbul/chai)

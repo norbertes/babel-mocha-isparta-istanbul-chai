@@ -1,7 +1,7 @@
 {
   "name": "hello-mocha",
   "version": "1.0.0",
-  "description": "ES6 Unit&Coverage Testing (powered by babel/mocha/isparta/istanbul/chai)",
+  "description": "ES6/JSX(React) Unit&Coverage Testing (Powered by babel-core/mocha/isparta/istanbul/chai)",
   "main": "index.js",
   "scripts": {
     "test": "NODE_PATH=src NODE_ENV=dev mocha",
@@ -12,15 +12,14 @@
     "url": "git+https://github.com/panlw/hello-isparta.git"
   },
   "devDependencies": {
-    "babel-core": "^5.8.3",
+    "babel-core": "^5.8.12",
     "chai": "^3.2.0",
     "isparta": "^3.0.3",
     "istanbul": "^0.3.17",
     "mocha": "^2.2.5",
     "node-jsdom": "^3.1.5",
     "react": "^0.13.3",
-    "require-noop": "0.0.2",
-    "rewire": "^2.3.4"
+    "require-noop": "0.0.2"
   },
   "keywords": [
     "es6",

@@ -1,3 +1,24 @@
+About Coverage Test
+====================
+
+```
+npm run cover
+```
+
+Configuring isparta
+====================
+
+Usage: node isparta cover <cmd> [options]
+
+cmd     ES6 js files to cover (using babel)
+
+Options:
+   --config <path-to-config>                           the configuration file to use, defaults to .istanbul.yml
+   --report <format>                                   report format, defaults to ['lcv']  [lcv]
+   --root <path>                                       the root path to look for files to instrument, defaults to .
+   -i <include-pattern>, --include <include-pattern>   one or more fileset patterns e.g. '**/*.js'  [**/*.js]
+   -v, --verbose                                       verbose mode
+
 
 Configuring istanbul
 ====================
@@ -87,4 +108,3 @@ check:
  results. `global` applies to all files together and `each` on a per-file
  basis. A list of files can be excluded from enforcement relative to root via
  the `exclude` property.
-

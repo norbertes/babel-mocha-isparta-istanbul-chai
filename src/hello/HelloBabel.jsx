@@ -1,5 +1,3 @@
-// import './HelloBabel.css';
-
 export function sayHelloUnused(hiOrHello) {
   if (hiOrHello) {
     return 'Hi, Isparta!';

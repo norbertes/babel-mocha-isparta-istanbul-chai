@@ -1,8 +1,7 @@
 import React from 'react/addons';
 const TestUtils = React.addons.TestUtils;
 
-import ReactUtils from 'ReactUtils';
-
+import ReactUtils from '../ReactUtils';
 import HelloItem from '../HelloItem';
 
 describe('HelloItem', () => {
