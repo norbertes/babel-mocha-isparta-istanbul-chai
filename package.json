@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/panlw/hello-isparta.git"
+    "url": "git+https://github.com/panlw/babel-mocha-isparta-istanbul-chai.git"
   },
   "devDependencies": {
     "babel-core": "^5.8.12",
