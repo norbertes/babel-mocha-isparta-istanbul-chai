@@ -1,5 +1,5 @@
 {
-  "name": "hello-mocha",
+  "name": "babel-mocha-isparta-istanbul-chai",
   "version": "1.0.0",
   "description": "ES6/JSX(React) Unit&Coverage Testing (Powered by babel-core/mocha/isparta/istanbul/chai)",
   "main": "index.js",
